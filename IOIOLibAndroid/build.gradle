@@ -9,6 +9,8 @@ android {
 
         versionCode getGitCommitCount()
         versionName getTag()
+
+        setProperty("archivesBaseName", "${archivesBaseName}-$versionName")
     }
 }
 
